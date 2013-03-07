@@ -1,0 +1,7 @@
+C:\Users\User\Documents\Projetos\Roguelike\Roguelike\Roguelike\Roguelike\obj\x86\Debug\Roguelike.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Projetos\Roguelike\Roguelike\Roguelike\Roguelike\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\User\Documents\Projetos\Roguelike\Roguelike\Roguelike\Roguelike\bin\x86\Debug\Roguelike.exe
+C:\Users\User\Documents\Projetos\Roguelike\Roguelike\Roguelike\Roguelike\bin\x86\Debug\Roguelike.pdb
+C:\Users\User\Documents\Projetos\Roguelike\Roguelike\Roguelike\Roguelike\obj\x86\Debug\Roguelike.exe
+C:\Users\User\Documents\Projetos\Roguelike\Roguelike\Roguelike\Roguelike\obj\x86\Debug\Roguelike.pdb
+C:\Users\User\Documents\Projetos\Roguelike\Roguelike\Roguelike\Roguelike\bin\x86\Debug\Content\Textures\hero.xnb
