@@ -11,16 +11,17 @@ namespace Roguelike.Model
     public class Character : XNAObject
     {
         Texture2D Texture {get; set;}
-        Vector2 Position {get; set;}
+        Tile tilePosition; //related to tile position (matrix index)
         Rectangle Rect {get; set;}
 
         private string _textureName;
 
         public Character() { }
 
-        public Character(string textureName)
+        public Character(string textureName, Tile tilePosition)
         {
             this._textureName = textureName;
+            this.tilePosition = tilePosition;
         }
 
         public override void LoadContent(ContentManager Content, SpriteBatch sb)
@@ -29,7 +30,6 @@ namespace Roguelike.Model
                 _textureName = "default";
 
             Texture = Content.Load<Texture2D>(@"Textures\" + _textureName);
-            Position = new Vector2(100, 100);
             Rect = new Rectangle(0, 0, 64, 64);
         }
 
@@ -40,7 +40,7 @@ namespace Roguelike.Model
 
         public override void Draw(GameTime gameTime, SpriteBatch sb)
         {
-            sb.Draw(Texture, Position, Rect, Color.White);
+            sb.Draw(Texture, tilePosition.getPosition(), Rect, Color.White);
         }
     }
 }

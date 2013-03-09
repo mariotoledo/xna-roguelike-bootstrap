@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Roguelike.Model;
+using Roguelike.Controller;
 
 namespace Roguelike
 {
@@ -19,14 +20,15 @@ namespace Roguelike
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-
-        Character hero;
+        
+        DungeonController dungeonController;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            hero = new Character("hero");
+            dungeonController = new DungeonController(new Dungeon(50));
+            
         }
 
         /// <summary>
@@ -50,8 +52,7 @@ namespace Roguelike
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            hero.LoadContent(Content, spriteBatch);
-
+            dungeonController.LoadContent(Content, spriteBatch);
             // TODO: use this.Content to load your game content here
         }
 
@@ -75,7 +76,7 @@ namespace Roguelike
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
-            hero.Update(gameTime);
+            dungeonController.Update(gameTime);
 
             // TODO: Add your update logic here
 
@@ -92,7 +93,7 @@ namespace Roguelike
 
             // TODO: Add your drawing code here
             spriteBatch.Begin();
-            hero.Draw(gameTime, spriteBatch);
+            dungeonController.Draw(gameTime, spriteBatch);
             spriteBatch.End();
 
             base.Draw(gameTime);

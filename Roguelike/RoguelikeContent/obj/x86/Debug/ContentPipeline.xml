@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\User\Documents\Projetos\Roguelike\Roguelike\Roguelike\Roguelike\bin\x86\Debug\Content\Textures\hero.xnb</Output>
+      <Output>C:\Users\User\Documents\GitHub\roguelike\Roguelike\Roguelike\bin\x86\Debug\Content\Textures\hero.xnb</Output>
       <Time>2013-03-06T21:55:34.6458119-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -16,10 +16,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\User\Documents\Projetos\Roguelike\Roguelike\Roguelike\RoguelikeContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\User\Documents\Projetos\Roguelike\Roguelike\Roguelike\Roguelike\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\User\Documents\Projetos\Roguelike\Roguelike\Roguelike\RoguelikeContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\User\Documents\Projetos\Roguelike\Roguelike\Roguelike\Roguelike\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\User\Documents\GitHub\roguelike\Roguelike\RoguelikeContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\User\Documents\GitHub\roguelike\Roguelike\Roguelike\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\User\Documents\GitHub\roguelike\Roguelike\RoguelikeContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\User\Documents\GitHub\roguelike\Roguelike\Roguelike\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

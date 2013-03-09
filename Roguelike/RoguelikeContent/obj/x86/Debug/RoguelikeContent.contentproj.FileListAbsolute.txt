@@ -1,1 +1,2 @@
 C:\Users\User\Documents\Projetos\Roguelike\Roguelike\Roguelike\RoguelikeContent\obj\x86\Debug\RoguelikeContent.contentprojResolveAssemblyReference.cache
+C:\Users\User\Documents\GitHub\roguelike\Roguelike\RoguelikeContent\obj\x86\Debug\RoguelikeContent.contentprojResolveAssemblyReference.cache
