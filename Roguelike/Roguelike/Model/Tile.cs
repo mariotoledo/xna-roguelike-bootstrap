@@ -8,8 +8,8 @@ namespace Roguelike.Model
 {
     public class Tile
     {
-        Vector2 position;
-        public Vector2 size;
+        private Vector2 position;
+        private Vector2 size;
 
         public Tile(){
             size = new Vector2(32, 32);

@@ -24,7 +24,7 @@ namespace Roguelike.Model
             this.tilePosition = tilePosition;
         }
 
-        public override void LoadContent(ContentManager Content, SpriteBatch sb)
+        public void LoadContent(ContentManager Content, SpriteBatch sb)
         {
             if (_textureName == null)
                 _textureName = "default";
@@ -33,12 +33,12 @@ namespace Roguelike.Model
             Rect = new Rectangle(0, 0, 64, 64);
         }
 
-        public override void Update(GameTime gameTime)
+        public void Update(GameTime gameTime)
         {
             
         }
 
-        public override void Draw(GameTime gameTime, SpriteBatch sb)
+        public void Draw(GameTime gameTime, SpriteBatch sb)
         {
             sb.Draw(Texture, tilePosition.getPosition(), Rect, Color.White);
         }

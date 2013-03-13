@@ -19,17 +19,17 @@ namespace Roguelike.Controller
             hero = new Character("hero", dungeon.InitialPosition);
         }
 
-        public override void LoadContent(Microsoft.Xna.Framework.Content.ContentManager Content, Microsoft.Xna.Framework.Graphics.SpriteBatch sb)
+        public void LoadContent(Microsoft.Xna.Framework.Content.ContentManager Content, Microsoft.Xna.Framework.Graphics.SpriteBatch sb)
         {
             hero.LoadContent(Content, sb);
         }
 
-        public override void Update(Microsoft.Xna.Framework.GameTime gameTime)
+        public void Update(Microsoft.Xna.Framework.GameTime gameTime)
         {
             hero.Update(gameTime);
         }
 
-        public override void Draw(Microsoft.Xna.Framework.GameTime gameTime, Microsoft.Xna.Framework.Graphics.SpriteBatch sb)
+        public void Draw(Microsoft.Xna.Framework.GameTime gameTime, Microsoft.Xna.Framework.Graphics.SpriteBatch sb)
         {
             hero.Draw(gameTime, sb);
         }
