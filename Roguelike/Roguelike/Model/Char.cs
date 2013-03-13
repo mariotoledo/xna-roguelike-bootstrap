@@ -5,10 +5,11 @@ using System.Text;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
+using Roguelike.Interfaces;
 
 namespace Roguelike.Model
 {
-    public class Character : XNAObject
+    public class Character : XNAObject, Movable
     {
         Texture2D Texture {get; set;}
         Tile tilePosition; //related to tile position (matrix index)
@@ -22,6 +23,16 @@ namespace Roguelike.Model
         {
             this._textureName = textureName;
             this.tilePosition = tilePosition;
+        }
+
+        public void setTile(Tile tile)
+        {
+            this.tilePosition = tile;
+        }
+
+        public Tile getTile()
+        {
+            return tilePosition;
         }
 
         public void LoadContent(ContentManager Content, SpriteBatch sb)
@@ -41,6 +52,11 @@ namespace Roguelike.Model
         public void Draw(GameTime gameTime, SpriteBatch sb)
         {
             sb.Draw(Texture, tilePosition.getPosition(), Rect, Color.White);
+        }
+
+        public void Move(Tile toTile, MoveDirection direction)
+        {
+            tilePosition = toTile;
         }
     }
 }

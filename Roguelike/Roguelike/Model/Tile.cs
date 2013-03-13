@@ -9,6 +9,7 @@ namespace Roguelike.Model
     public class Tile
     {
         private Vector2 position;
+        private Vector2 relativePosition;
         private Vector2 size;
 
         public Tile(){
@@ -28,6 +29,16 @@ namespace Roguelike.Model
         public void setPosition(Vector2 newPosition)
         {
             this.position = newPosition;
+        }
+
+        public Vector2 getRelativePosition()
+        {
+            return relativePosition;
+        }
+
+        public void setRelativePosition(Vector2 newRelativePosition)
+        {
+            this.relativePosition = newRelativePosition;
         }
     }
 }

@@ -26,6 +26,18 @@ namespace Roguelike.Controller
 
         public void Update(Microsoft.Xna.Framework.GameTime gameTime)
         {
+            if (InputController.Instance.getKeyPressed(Microsoft.Xna.Framework.Input.Keys.Down))
+                hero.Move(dungeon.getMap()[(int)hero.getTile().getRelativePosition().X, (int)hero.getTile().getRelativePosition().Y + 1], Interfaces.MoveDirection.Down);
+
+            if (InputController.Instance.getKeyPressed(Microsoft.Xna.Framework.Input.Keys.Up))
+                hero.Move(dungeon.getMap()[(int)hero.getTile().getRelativePosition().X, (int)hero.getTile().getRelativePosition().Y - 1], Interfaces.MoveDirection.Up);
+
+            if (InputController.Instance.getKeyPressed(Microsoft.Xna.Framework.Input.Keys.Left))
+                hero.Move(dungeon.getMap()[(int)hero.getTile().getRelativePosition().X + 1 , (int)hero.getTile().getRelativePosition().Y], Interfaces.MoveDirection.Left);
+
+            if (InputController.Instance.getKeyPressed(Microsoft.Xna.Framework.Input.Keys.Right))
+                hero.Move(dungeon.getMap()[(int)hero.getTile().getRelativePosition().X - 1, (int)hero.getTile().getRelativePosition().Y], Interfaces.MoveDirection.Right);
+
             hero.Update(gameTime);
         }
 

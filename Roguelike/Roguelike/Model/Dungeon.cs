@@ -22,6 +22,7 @@ namespace Roguelike.Model
                 {
                     map[i, j] = new Tile();
                     map[i, j].setPosition(new Vector2(i * map[i, j].getSize().X, j * map[i, j].getSize().Y));
+                    map[i, j].setRelativePosition(new Vector2(i, j));
                 }
             }
         }
