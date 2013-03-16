@@ -76,6 +76,7 @@ namespace Roguelike
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
+            InputController.Instance.Update();
             dungeonController.Update(gameTime);
 
             // TODO: Add your update logic here

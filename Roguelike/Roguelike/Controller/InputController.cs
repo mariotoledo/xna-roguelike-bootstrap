@@ -11,10 +11,12 @@ namespace Roguelike.Controller
     {
         KeyboardState lastState;
 
+        public delegate void KeyPressedHandler(object sender, KeyEventArgs key);
+        // The event
+        public event KeyPressedHandler KeyPressedEvent;
+
         #region Singleton
         private static InputController instance;
-
-        private InputController() { }
 
         public static InputController Instance
         {
@@ -29,11 +31,38 @@ namespace Roguelike.Controller
         }
         #endregion
 
-        public bool getKeyPressed(Keys key)
+        public void Update()
         {
-            bool keyPressed = lastState.IsKeyDown(key) && Keyboard.GetState().IsKeyUp(key);
+            Keys[] keyPressed = Keyboard.GetState().GetPressedKeys();
+            foreach (Keys key in keyPressed)
+            {
+                if (lastState != null)
+                {
+                    if (lastState.IsKeyUp(key) && Keyboard.GetState().IsKeyDown(key))
+                    {
+                        OnKeyPressedEvent(this, new KeyEventArgs(key));
+                    }
+                }
+            }
+
             lastState = Keyboard.GetState();
-            return keyPressed;
+        }
+
+        protected void OnKeyPressedEvent(object sender, KeyEventArgs e)
+        {
+            if (KeyPressedEvent != null)
+            {
+                KeyPressedEvent(this, e);
+            }
+        }
+    }
+
+    public class KeyEventArgs : EventArgs
+    {
+        public Keys key;
+        public KeyEventArgs(Keys key)
+        {
+            this.key = key;
         }
     }
 }
