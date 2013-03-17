@@ -28,7 +28,8 @@ namespace Roguelike
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             dungeonController = new DungeonController(new Dungeon(50));
-            
+
+            this.TargetElapsedTime = new TimeSpan(0, 0, 0, 0, Config.Framerate);
         }
 
         /// <summary>

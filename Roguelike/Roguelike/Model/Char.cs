@@ -6,16 +6,19 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Roguelike.Interfaces;
+using System.Diagnostics;
 
 namespace Roguelike.Model
 {
     public class Character : XNAObject, Movable
     {
         Texture2D Texture {get; set;}
-        Tile tilePosition; //related to tile position (matrix index)
+        private Vector2 currentAbsolutePosition;
+        private Tile currentRelativePosition; //related to tile position (matrix index)
+
         Rectangle Rect;
-        State state;
         Direction direction;
+        State state;
 
         public enum State
         {
@@ -27,20 +30,16 @@ namespace Roguelike.Model
 
         public Character() { }
 
-        public Character(string textureName, Tile tilePosition)
+        public Character(string textureName, Tile initialPosition)
         {
             this._textureName = textureName;
-            this.tilePosition = tilePosition;
+            currentRelativePosition = initialPosition;
+            this.currentAbsolutePosition = initialPosition.getPosition();
         }
 
-        public void setTile(Tile tile)
+        public Tile getRelativePosition()
         {
-            this.tilePosition = tile;
-        }
-
-        public Tile getTile()
-        {
-            return tilePosition;
+            return currentRelativePosition;
         }
 
         public void LoadContent(ContentManager Content, SpriteBatch sb)
@@ -54,23 +53,47 @@ namespace Roguelike.Model
 
         public void Update(GameTime gameTime)
         {
-            
+            if (state == State.isMoving)
+            {
+                if (currentAbsolutePosition.X != currentRelativePosition.getPosition().X || currentAbsolutePosition.Y != currentRelativePosition.getPosition().Y)
+                    UpdatePosition();
+                else
+                    state = State.None;
+            }
+
+            Debug.WriteLine("x: " + currentAbsolutePosition.X + " y: " + currentAbsolutePosition.Y);
         }
 
         public void Draw(GameTime gameTime, SpriteBatch sb)
         {
-            sb.Draw(Texture, tilePosition.getPosition(), Rect, Color.White);
+            sb.Draw(Texture, currentAbsolutePosition, Rect, Color.White);
         }
 
         public void Move(Tile toTile, Direction direction)
         {
-            tilePosition = toTile;
-            setDirection(direction);
+            if (state == State.None)
+            {
+                currentRelativePosition = toTile;
+                state = State.isMoving;
+                setDirection(direction);
+            }
         }
 
         private void setDirection(Direction direction){
             this.direction = direction;
             Rect.Y = this.Rect.Height * (int)direction;
+        }
+
+        private void UpdatePosition()
+        {
+            if (currentAbsolutePosition.X < currentRelativePosition.getPosition().X)
+                currentAbsolutePosition.X += 1;
+            else if (currentAbsolutePosition.X > currentRelativePosition.getPosition().X)
+                currentAbsolutePosition.X = currentAbsolutePosition.X - 1;
+            else if (currentAbsolutePosition.Y < currentRelativePosition.getPosition().Y)
+                currentAbsolutePosition.Y = currentAbsolutePosition.Y + 1;
+            else if (currentAbsolutePosition.Y > currentRelativePosition.getPosition().Y)
+                currentAbsolutePosition.Y = currentAbsolutePosition.Y - 1;
         }
     }
 }

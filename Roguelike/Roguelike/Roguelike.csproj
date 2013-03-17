@@ -107,6 +107,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config.cs" />
     <Compile Include="Controller\DungeonController.cs" />
     <Compile Include="Controller\InputController.cs" />
     <Compile Include="Interfaces\Movable.cs" />
