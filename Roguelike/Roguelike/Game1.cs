@@ -27,7 +27,7 @@ namespace Roguelike
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            dungeonController = new DungeonController(new Dungeon(50));
+            dungeonController = new DungeonController(new Dungeon(25, 15));
             
         }
 

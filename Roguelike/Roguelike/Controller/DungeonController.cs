@@ -23,16 +23,19 @@ namespace Roguelike.Controller
 
         public void LoadContent(Microsoft.Xna.Framework.Content.ContentManager Content, Microsoft.Xna.Framework.Graphics.SpriteBatch sb)
         {
+            dungeon.LoadContent(Content, sb);
             hero.LoadContent(Content, sb);
         }
 
         public void Update(Microsoft.Xna.Framework.GameTime gameTime)
         {
+            dungeon.Update(gameTime);
             hero.Update(gameTime);
         }
 
         public void Draw(Microsoft.Xna.Framework.GameTime gameTime, Microsoft.Xna.Framework.Graphics.SpriteBatch sb)
         {
+            dungeon.Draw(gameTime, sb);
             hero.Draw(gameTime, sb);
         }
 

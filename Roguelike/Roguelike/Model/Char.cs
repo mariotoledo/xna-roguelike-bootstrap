@@ -49,7 +49,7 @@ namespace Roguelike.Model
                 _textureName = "default";
 
             Texture = Content.Load<Texture2D>(@"Textures\" + _textureName);
-            Rect = new Rectangle(0, 0, 64, 64);
+            Rect = new Rectangle(15, 0, 32, 64);
         }
 
         public void Update(GameTime gameTime)

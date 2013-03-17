@@ -7,8 +7,26 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\User\Documents\GitHub\roguelike\Roguelike\Roguelike\bin\x86\Debug\Content\Textures\hero.xnb</Output>
-      <Time>2013-03-06T21:55:34.6458119-03:00</Time>
+      <Output>C:\Users\Daniel\Documents\GitHub\roguelike\Roguelike\Roguelike\bin\x86\Debug\Content\Textures\hero.xnb</Output>
+      <Time>2013-03-12T23:39:39.8163448-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\tileFloor.png</Source>
+      <Name>Textures\tileFloor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Daniel\Documents\GitHub\roguelike\Roguelike\Roguelike\bin\x86\Debug\Content\Textures\tileFloor.xnb</Output>
+      <Time>2013-03-17T11:25:38.6765785-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\tileWall.png</Source>
+      <Name>Textures\tileWall</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Daniel\Documents\GitHub\roguelike\Roguelike\Roguelike\bin\x86\Debug\Content\Textures\tileWall.xnb</Output>
+      <Time>2013-03-17T11:37:07.2819582-03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -16,10 +34,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\User\Documents\GitHub\roguelike\Roguelike\RoguelikeContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\User\Documents\GitHub\roguelike\Roguelike\Roguelike\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\User\Documents\GitHub\roguelike\Roguelike\RoguelikeContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\User\Documents\GitHub\roguelike\Roguelike\Roguelike\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Daniel\Documents\GitHub\roguelike\Roguelike\RoguelikeContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Daniel\Documents\GitHub\roguelike\Roguelike\Roguelike\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Daniel\Documents\GitHub\roguelike\Roguelike\RoguelikeContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Daniel\Documents\GitHub\roguelike\Roguelike\Roguelike\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -48,7 +66,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2011-05-04T11:39:42.743957-03:00</Value>
+        <Value>2011-05-20T11:01:50.6186307-03:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
