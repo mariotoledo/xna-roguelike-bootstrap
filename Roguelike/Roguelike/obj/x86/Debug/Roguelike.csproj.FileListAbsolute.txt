@@ -12,3 +12,14 @@ C:\Users\User\Documents\GitHub\roguelike\Roguelike\Roguelike\obj\x86\Debug\Rogue
 C:\Users\User\Documents\GitHub\roguelike\Roguelike\Roguelike\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\User\Documents\GitHub\roguelike\Roguelike\Roguelike\obj\x86\Debug\Roguelike.exe
 C:\Users\User\Documents\GitHub\roguelike\Roguelike\Roguelike\obj\x86\Debug\Roguelike.pdb
+C:\Users\Daniel\Documents\GitHub\roguelike\Roguelike\Roguelike\bin\x86\Debug\Content\Textures\hero.xnb
+C:\Users\Daniel\Documents\GitHub\roguelike\Roguelike\Roguelike\bin\x86\Debug\Roguelike.exe
+C:\Users\Daniel\Documents\GitHub\roguelike\Roguelike\Roguelike\bin\x86\Debug\Roguelike.pdb
+C:\Users\Daniel\Documents\GitHub\roguelike\Roguelike\Roguelike\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Daniel\Documents\GitHub\roguelike\Roguelike\Roguelike\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Daniel\Documents\GitHub\roguelike\Roguelike\Roguelike\obj\x86\Debug\Roguelike.exe
+C:\Users\Daniel\Documents\GitHub\roguelike\Roguelike\Roguelike\obj\x86\Debug\Roguelike.pdb
+C:\Users\Daniel\Documents\GitHub\roguelike\Roguelike\Roguelike\bin\x86\Debug\Content\Textures\tileFloor.xnb
+C:\Users\Daniel\Documents\GitHub\roguelike\Roguelike\Roguelike\bin\x86\Debug\Content\Textures\tileWall.xnb
+C:\Users\User\Documents\GitHub\roguelike\Roguelike\Roguelike\bin\x86\Debug\Content\Textures\tileFloor.xnb
+C:\Users\User\Documents\GitHub\roguelike\Roguelike\Roguelike\bin\x86\Debug\Content\Textures\tileWall.xnb

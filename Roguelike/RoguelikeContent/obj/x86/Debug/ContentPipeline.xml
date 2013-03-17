@@ -10,6 +10,24 @@
       <Output>C:\Users\User\Documents\GitHub\roguelike\Roguelike\Roguelike\bin\x86\Debug\Content\Textures\hero.xnb</Output>
       <Time>2013-03-06T21:55:34.6458119-03:00</Time>
     </Item>
+    <Item>
+      <Source>Textures\tileFloor.png</Source>
+      <Name>Textures\tileFloor</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\User\Documents\GitHub\roguelike\Roguelike\Roguelike\bin\x86\Debug\Content\Textures\tileFloor.xnb</Output>
+      <Time>2013-03-17T16:55:57.2411977-03:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\tileWall.png</Source>
+      <Name>Textures\tileWall</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\User\Documents\GitHub\roguelike\Roguelike\Roguelike\bin\x86\Debug\Content\Textures\tileWall.xnb</Output>
+      <Time>2013-03-17T16:55:57.2421977-03:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
