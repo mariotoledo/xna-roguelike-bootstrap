@@ -13,7 +13,15 @@ namespace Roguelike.Model
     {
         Texture2D Texture {get; set;}
         Tile tilePosition; //related to tile position (matrix index)
-        Rectangle Rect {get; set;}
+        Rectangle Rect;
+        State state;
+        Direction direction;
+
+        public enum State
+        {
+            None,
+            isMoving
+        }
 
         private string _textureName;
 
@@ -54,9 +62,15 @@ namespace Roguelike.Model
             sb.Draw(Texture, tilePosition.getPosition(), Rect, Color.White);
         }
 
-        public void Move(Tile toTile, MoveDirection direction)
+        public void Move(Tile toTile, Direction direction)
         {
             tilePosition = toTile;
+            setDirection(direction);
+        }
+
+        private void setDirection(Direction direction){
+            this.direction = direction;
+            Rect.Y = this.Rect.Height * (int)direction;
         }
     }
 }

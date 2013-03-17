@@ -7,14 +7,14 @@ namespace Roguelike.Interfaces
 {
     public interface Movable
     {
-        void Move(Roguelike.Model.Tile toTile, MoveDirection direction);
+        void Move(Roguelike.Model.Tile toTile, Direction direction);
     }
 
-    public enum MoveDirection
+    public enum Direction
     {
-        Up,
         Down,
         Left,
-        Right
+        Right,
+        Up
     }
 }
